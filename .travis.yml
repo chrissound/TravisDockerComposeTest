@@ -1,0 +1,11 @@
+language: php
+services:
+- docker
+branches:
+  only:
+  - master
+jobs:
+  include:
+  - stage: build
+    script:
+    - "./x.sh"
